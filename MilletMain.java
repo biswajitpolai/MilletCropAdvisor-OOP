@@ -1,9 +1,11 @@
 
-    import java.util.ArrayList;
+import java.util.ArrayList;
 import java.util.Scanner;
 
-public class MilletMain {
-    public static void main(String[] args) {
+public class MilletMain 
+{
+    public static void main(String[] args) 
+    {
         ArrayList<Millet> millets = new ArrayList<>();
         millets.add(new Jowar());
         millets.add(new PearlMillet());
@@ -15,9 +17,9 @@ public class MilletMain {
         millets.add(new RagiMillet());
         millets.add(new BarnyardMillet());
 
-        Scanner scanner = new Scanner(System.in);
+Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter soil pH: ");
+        System.out.print("Enter soil pH:");
         double ph = scanner.nextDouble();
         System.out.print("Enter soil type: ");
         String soilType = scanner.next();
@@ -27,8 +29,10 @@ public class MilletMain {
         boolean isIrrigated = scanner.nextBoolean();
 
         boolean milletFound = false;
-        for (Millet millet : millets) {
-            if (millet.matches(ph, soilType, temperature, isIrrigated)) {
+        for (Millet millet : millets)
+            {
+            if (millet.matches(ph, soilType, temperature, isIrrigated))
+            {
                 millet.displayInfo();
                 ((Recommender) millet).recommend();
                 milletFound = true;
@@ -36,11 +40,10 @@ public class MilletMain {
             }
         }
 
-        if (!milletFound) {
+        if (!milletFound)
+        {
             System.out.println("No suitable millet found for the provided conditions.");
         }
-
-        scanner.close();
     }
 }
 
