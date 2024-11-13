@@ -1,5 +1,4 @@
-MilletCropAdvisor-
-It is an object-oriented programming-based recommendation system designed to help farmers choose the most suitable millet crops for cultivation based on environmental factors like soil type, pH level, temperature, and irrigation availability.
+Millet_recommender is an object-oriented programming-based recommendation system designed to help farmers choose the most suitable millet crops for cultivation based on environmental factors like soil type, pH level, temperature, and irrigation availability.
 
 This project used key OOP concepts such as Data abstraction, inheritance, polymorphism, and encapsulation.
 
